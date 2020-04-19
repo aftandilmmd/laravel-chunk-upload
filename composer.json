@@ -8,6 +8,12 @@
       "email": "martin@kluska.cz"
     }
   ],
+  "repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/parthn/laravel-chunk-upload"
+		}
+	],
   "scripts": {
     "lint:fix": "./vendor/bin/php-cs-fixer fix --config=.php_cs --using-cache false",
     "lint:check": "./vendor/bin/phplint",
@@ -15,6 +21,7 @@
     "test": "./vendor/bin/phpunit"
   },
   "require": {
+	"original/package": "dev-master"
     "php": ">=7.2",
     "illuminate/support": "^6.0 || ^7.0",
     "illuminate/http": "^6.0 || ^7.0",
